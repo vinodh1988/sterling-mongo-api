@@ -1,4 +1,5 @@
 var products=require('../dao/productschema');
+var passport = require('passport');
 
 var route=require('express').Router();
 
@@ -30,7 +31,7 @@ route.delete("/products/:productkey",function(request,response){
     })
 })
 
-route.get("/products",function(request,response){
+route.get("/products",passport.authenticate('jwt',{session:false}),function(request,response){
        products.find({},{_id:0,__v:0},function(err,data){
            if(err)
                response.status(500);
