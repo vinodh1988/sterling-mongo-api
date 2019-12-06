@@ -1,0 +1,42 @@
+(node:18056) DeprecationWarning: current URL string parser is deprecated, and will be removed in a future version. To use the new parser, pass option { useNewUrlParser: true } to MongoClient.connect.
+(node:18056) DeprecationWarning: current Server Discovery and Monitoring engine is deprecated, and will be removed in a future version. To use the new Server Discover and Monitoring engine, pass option { useUnifiedTopology: true } to the MongoClient constructor.
+connection error: MongoNetworkError: failed to connect to server [localhost:27017] on first connect [Error: connect ECONNREFUSED 127.0.0.1:27017
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1129:14) {
+  name: 'MongoNetworkError',
+  errorLabels: [Array],
+  [Symbol(mongoErrorContextSymbol)]: {}
+}]
+    at Pool.<anonymous> (d:\sterling_dec\mongoservice\node_modules\mongodb\lib\core\topologies\server.js:431:11)
+    at Pool.emit (events.js:210:5)
+    at d:\sterling_dec\mongoservice\node_modules\mongodb\lib\core\connection\pool.js:580:14
+    at d:\sterling_dec\mongoservice\node_modules\mongodb\lib\core\connection\connect.js:39:11
+    at callback (d:\sterling_dec\mongoservice\node_modules\mongodb\lib\core\connection\connect.js:261:5)
+    at Socket.<anonymous> (d:\sterling_dec\mongoservice\node_modules\mongodb\lib\core\connection\connect.js:286:7)
+    at Object.onceWrapper (events.js:300:26)
+    at Socket.emit (events.js:210:5)
+    at emitErrorNT (internal/streams/destroy.js:92:8)
+    at emitErrorAndCloseNT (internal/streams/destroy.js:60:3)
+    at processTicksAndRejections (internal/process/task_queues.js:80:21) {
+  name: 'MongoNetworkError',
+  errorLabels: [ 'TransientTransactionError' ],
+  [Symbol(mongoErrorContextSymbol)]: {}
+}
+(node:18056) UnhandledPromiseRejectionWarning: MongoNetworkError: failed to connect to server [localhost:27017] on first connect [Error: connect ECONNREFUSED 127.0.0.1:27017
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1129:14) {
+  name: 'MongoNetworkError',
+  errorLabels: [Array],
+  [Symbol(mongoErrorContextSymbol)]: {}
+}]
+    at Pool.<anonymous> (d:\sterling_dec\mongoservice\node_modules\mongodb\lib\core\topologies\server.js:431:11)
+    at Pool.emit (events.js:210:5)
+    at d:\sterling_dec\mongoservice\node_modules\mongodb\lib\core\connection\pool.js:580:14
+    at d:\sterling_dec\mongoservice\node_modules\mongodb\lib\core\connection\connect.js:39:11
+    at callback (d:\sterling_dec\mongoservice\node_modules\mongodb\lib\core\connection\connect.js:261:5)
+    at Socket.<anonymous> (d:\sterling_dec\mongoservice\node_modules\mongodb\lib\core\connection\connect.js:286:7)
+    at Object.onceWrapper (events.js:300:26)
+    at Socket.emit (events.js:210:5)
+    at emitErrorNT (internal/streams/destroy.js:92:8)
+    at emitErrorAndCloseNT (internal/streams/destroy.js:60:3)
+    at processTicksAndRejections (internal/process/task_queues.js:80:21)
+(node:18056) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 1)
+(node:18056) [DEP0018] DeprecationWarning: Unhandled promise rejections are deprecated. In the future, promise rejections that are not handled will terminate the Node.js process with a non-zero exit code.

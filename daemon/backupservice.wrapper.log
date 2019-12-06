@@ -1,0 +1,2 @@
+2019-12-06 14:00:35 - Starting C:\Program Files\nodejs\node.exe  --harmony D:\sterling_dec\serviceCreator\node_modules\node-windows\lib\wrapper.js --file d:\sterling_dec\mongoservice\index.js --log "BackupService wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2019-12-06 14:00:35 - Started 17224
